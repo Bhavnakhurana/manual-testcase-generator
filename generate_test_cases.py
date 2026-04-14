@@ -193,7 +193,7 @@ def build_ui_test_case(index: int, requirement: str, scenario: str, priority: st
         test_case_id=f"UI-TC-{index:03d}",
         test_type="UI",
         title=f"{scenario}",
-        preconditions="Application UI is accessible and test user/data is available",
+        preconditions="Application UI is accessible and test user/data is available.",
         steps=[
             "Launch the application in a browser.",
             "Navigate to the relevant screen.",
@@ -262,7 +262,7 @@ def build_test_cases_from_scenarios(scenarios: list[LogicalScenario]) -> list[Ma
 
 def save_test_cases_to_docx(test_cases: list[ManualTestCase], output_path: Path) -> None:
     document = Document()
-    document.add_heading("Manual Test Cases (UI + API)", level=1)
+    document.add_heading("Manual Test Cases (UI + API) Bhavna", level=1)
 
     for test_type in ("UI", "API"):
         document.add_heading(f"{test_type} Test Cases", level=2)
