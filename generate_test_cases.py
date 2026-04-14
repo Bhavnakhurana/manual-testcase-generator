@@ -193,7 +193,7 @@ def build_ui_test_case(index: int, requirement: str, scenario: str, priority: st
         test_case_id=f"UI-TC-{index:03d}",
         test_type="UI",
         title=f"{scenario}",
-        preconditions="Application UI is accessible and test user/data is available.",
+        preconditions="Application UI is accessible and test user/data is available",
         steps=[
             "Launch the application in a browser.",
             "Navigate to the relevant screen.",
